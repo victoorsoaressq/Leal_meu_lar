@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  text-decoration: none;
+}
+
+:root {
+  --colorBody: #f2f2f2;
+  --colorP1: #0000009c;
+  --colorP2: #ffffffb7;
+  --colorP3: #4c4c4c;
+  --colorP4: #7f7f7f;
+  --colorWhite: #fff;
+  --colorGreen1: #28f32b;
+  --colorGreen2: #00f646;
+  --colorBlue: #0044ff;
+  --colorBlueDark: #072883;
+  --colorBlueDark2: #1e3050;
+  --colorButtonBlue: #4f9cfa;
+  --colorButtonBlueHover: #3580db;
+  --colorButtonGreen: #21eb21;
+  --colorOutlineEffect1: #4f9bf98a;
+  --colorOutlineEffect2: #4f9bf900;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--colorBody);
+}
+
+header {
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#BannerHome {
+  background-image: url(./assets/img/banner01.jpg);
+  object-fit: cover;
+}
+
+#BannerSobre {
+  background-image: url(./assets/img/banner03.jpg);
+}
+
+#BannerProjetos {
+  background-image: url(./assets/img/banner02.jpg);
+}
+
+#BannerDepoimentos {
+  background-image: url(./assets/img/banner04.jpg);
+}
+
+#BannerAp01 {
+  background-image: url(./assets/img/capaBanner01.jpg);
+}
+
+#BannerAp02 {
+  background-image: url(./assets/img/capaBanner02.jpg);
+}
+
+#BannerAp03 {
+  background-image: url(./assets/img/capaBanner03.jpg);
+}
+
+#BannerAp04 {
+  background-image: url(./assets/img/capaBanner04.jpg);
+}
+
+#BannerAp05 {
+  background-image: url(./assets/img/capaBanner05.jpg);
+}
+
+#BannerAp06 {
+  background-image: url(./assets/img/capaBanner06.jpg);
+}
+
+#ButtonClose {
+  display: none;
+}
+
+#SessaoClose {
+  display: none;
+}
+
+.bannerMcmv {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  box-shadow: -10px -10px 20px #00000040;
+}
+
+.bannerMcmv img {
+  height: 50px;
+  margin: 20px 40px;
+}
+
+.parceria {
+  width: 100%;
+  background-color: var(--colorWhite);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  box-shadow: -5px -5px 20px #00000040;
+}
+
+.parceria div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.parceria h2 {
+  color: var(--colorP3);
+  text-align: center;
+  font-size: 30px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.parceria img {
+  width: 300px;
+  margin: 20px;
+}
+
+section,
+footer {
+  padding: 54px 0;
+}
+
+h3 {
+  font-size: 50px;
+}
+
+
+span {
+  color: var(--colorButtonBlue);
+}
+
+footer {
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--colorWhite);
+}
+
+footer p {
+  opacity: 0.5;
+}
+
+video {
+  border-radius: 10px;
+  box-shadow: 5px 5px 15px  #00000010;
+}
+
+@media(max-width: 700px) {
+  video {
+    width: 100%;
+  }
+}

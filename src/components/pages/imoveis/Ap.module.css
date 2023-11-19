@@ -1,0 +1,234 @@
+.apDescritivo {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    padding: 20px;
+    align-items: flex-start;
+}
+
+.boxInfo {
+    width: 400px;
+    background-color: var(--colorWhite);
+    box-shadow: 5px 5px 15px #00000020;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.boxInfo a {
+    background-image: linear-gradient(90deg, var(--colorBlue), var(--colorButtonBlue));
+    color: var(--colorWhite);
+    padding: 15px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+    font-size: 20px;
+}
+
+#whatsApp {
+    background-image: var(--colorWhite);
+    border: 2px solid var(--colorBlueDark2);
+    color: var(--colorBlueDark2);
+}
+
+.boxInfo svg {
+    fill: var(--colorWhite);
+    margin-right: 10px;
+    height: 25px;
+}
+
+#whatsAppSvg {
+    fill: var(--colorBlueDark2);
+}
+
+.apContainer {
+    width: 800px;
+    padding: 20px;
+}
+
+.apTitle h2 {
+    color: var(--colorP3);
+    text-align: center;
+    font-size: 40px;
+}
+
+.apTitle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 40px;
+}
+
+.apTitle p {
+    color: var(--colorP4);
+    text-align: center;
+    font-size: 30px;
+}
+
+.apParagrafo {
+    margin-top: 50px;
+}
+
+.apParagrafo p {
+    font-size: 20px;
+    text-align: start;
+    margin: 20px 0;
+    color: var(--colorBlueDark2);
+}
+
+.lazerContainer {
+    background-color: var(--colorWhite);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.lazerIcons {
+    width: 100%;
+    padding: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.lazerIconsCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 330px;
+}
+
+.lazerIconsCont:first-of-type {
+    margin-right: 100px;
+}
+
+.icon div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+}
+
+.icon div p {
+    margin-left: 15px;
+}
+
+.lazerIcons img {
+    width: 40px;
+    align-items: center;
+}
+
+.lazerIcons p {
+    font-size: 20px;
+    color: var(--colorButtonBlue);
+}
+
+.sliderContainer {
+    padding: 40px 10px;
+    background-color: var(--colorBlueDark2);
+}
+
+.sliderContainer h2 {
+    color: var(--colorWhite);
+    text-align: center;
+    
+    font-size: 50px;
+}
+
+.sliderContainer p {
+    color: var(--colorWhite);
+    text-align: center;
+    font-size: 30px;
+    font-weight: 200;
+    margin-bottom: 50px;
+}
+
+.slide_item {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.slide_flex {
+    width: 700px;
+    margin: 0 auto;
+}
+
+.regiao {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--colorWhite);
+}
+
+.regiao img {
+    border-radius: 5px;
+    box-shadow: 20px 20px 0px var(--colorBody);
+}
+
+.regiaoDescritivo {
+    width: 500px;
+    padding: 0 30px;
+}
+.regiaoDescritivo h2 {
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: var(--colorP3);
+}
+.regiaoDescritivo p {
+    margin-top: 10px;
+    color: var(--colorP4);
+    font-size: 20px;
+}
+
+@media(max-width: 890px) {
+    .apDescritivo {
+        flex-direction: column;
+    }
+
+    .boxInfo {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .apContainer {
+        width: 100%;
+    }
+
+    .slide_flex {
+        width: 100%;
+    }
+
+    .lazerIconsCont:first-of-type {
+        margin-right: 20px;
+    }
+
+    .regiao {
+        flex-direction: column-reverse;
+    }
+
+    .regiao img {
+        width: 300px;
+    }
+
+    .regiaoDescritivo h2 {
+        text-align: center;
+    }
+
+    .regiaoDescritivo p:last-of-type {
+        margin-bottom: 30px;
+    }
+}
+
+@media(max-width: 600px) {
+    .regiaoDescritivo {
+        width: 100%;
+        padding: 0 40px;
+    }
+}

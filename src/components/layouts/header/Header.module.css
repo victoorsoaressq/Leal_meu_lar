@@ -1,0 +1,168 @@
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+.container nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 30px;
+}
+
+.container nav a h1 {
+    color: var(--colorWhite);
+    text-transform: uppercase;
+}
+
+.container nav ul {
+    display: flex;
+    align-items: center;
+}
+
+.container nav ul a {
+    color: var(--colorWhite);
+    margin: 0 25px;
+    text-transform: uppercase;
+    font-size: 14px;
+    display: block;
+}
+
+.container nav ul a:not(.btn)::after {
+    content: "";
+    background-color: var(--colorButtonBlue);
+    height: 3px;
+    width: 0%;
+    display: block;
+    margin: 0 auto;
+    transition: 0.3s;
+}
+
+.container nav ul a:hover::after {
+    width: 100%;
+}
+
+.btn {
+    background-color: var(--colorButtonBlue);
+    color: var(--colorWhite);
+    padding: 15px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: inline-block;
+    transition: 0.1s;
+}
+
+#animate_btn {
+    animation: animate-outline 1s ease-in-out infinite;
+}
+
+.btn:hover {
+    background-color: var(--colorButtonBlueHover);
+}
+
+@keyframes animate-outline {
+    from {
+        outline: 0px solid var(--colorOutlineEffect1);
+    }
+    to {
+        outline: 15px solid var(--colorOutlineEffect2);
+    }
+}
+
+.menu_icon {
+    display: none;
+}
+
+.menu_icon svg {
+    fill: #fff;
+    cursor: pointer;
+    height: 2rem;
+}
+
+.close_icon {
+    display: none;
+}
+
+.close_icon svg {
+    fill: #fff;
+    cursor: pointer;
+    height: 2rem;
+}
+
+.banner {
+    display: flex;
+    justify-content: center;
+}
+
+.banner_text {
+    margin: 150px;
+    text-align: center;
+    padding: 0 90px;
+}
+
+.banner_text h1 {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: var(--colorWhite);
+}
+
+.banner_text p {
+    font-size: 20px;
+    color: var(--colorP2);
+    font-weight: lighter;
+    margin: 18px 0;
+}
+
+@media(max-width: 850px) {
+    .ul {
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-image: linear-gradient(90deg, var(--colorBlue), var(--colorButtonBlue));
+        filter: blur;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: 0.5s;
+        z-index: 1000;
+    }
+
+    #open {
+        clip-path: circle(141.2% at 100% 0);
+    }
+
+    #close {
+        clip-path: circle(0% at 100% 0);
+    }
+
+    .container nav ul a {
+        margin: 20px 0;
+        font-size: 16px;
+    }
+
+    .menu_icon {
+        display: block;
+    }
+
+    .close_icon {
+        display: block;
+        position: absolute;
+        top: 35px;
+        right: 25px;
+    }
+}
+
+@media(max-width: 1200px) {
+    .banner_text { 
+        padding: 0 0;
+    }
+}
+
+@media(max-width: 850px) {
+    .banner_text { 
+        margin: 110px 50px;
+    }
+}
