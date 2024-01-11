@@ -82,6 +82,14 @@ header {
   background-image: url(./assets/img/capaBanner06.jpg);
 }
 
+#BannerAp07 {
+  background-image: url(./assets/img/capaBanner07.jpg);
+}
+
+#BannerAp08 {
+  background-image: url(./assets/img/capaBanner08.jpg);
+}
+
 #ButtonClose {
   display: none;
 }

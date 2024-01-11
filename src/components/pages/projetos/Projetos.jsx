@@ -16,6 +16,8 @@ import imovel03 from '../../../assets/img/capa03.jpg'
 import imovel04 from '../../../assets/img/capa04.jpg'
 import imovel05 from '../../../assets/img/capa05.jpg'
 import imovel06 from '../../../assets/img/capa06.jpg'
+import imovel07 from '../../../assets/img/capa07.jpg'
+import imovel08 from '../../../assets/img/capa08.jpg'
 
 
 function Projetos() {
@@ -32,6 +34,30 @@ function Projetos() {
                 button='ButtonClose'
             />
             <section className={styles.container}>
+                <Card
+                    capaImg={imovel07}
+                    bandeira='Lançamento'
+                    title='Mérito Santo Amaro'
+                    subTitle='Santo Amaro'
+                    description='2 dorms. com opção de terraço, suíte e lazer completo'
+                    icon1={Icon.churrasqueira()}
+                    icon2={Icon.fitness()}
+                    icon3={Icon.playBaby()}
+                    icon4={Icon.espacoBeleza()}
+                    link='/projetos/ap07'
+                />
+                <Card
+                    capaImg={imovel08}
+                    bandeira='Lançamento'
+                    title='The Place Barra Funda'
+                    subTitle='Barra Funda'
+                    description='2 dorms. com opção de suíte/ lazer completo'
+                    icon1={Icon.fitness()}
+                    icon2={Icon.piscina()}
+                    icon3={Icon.churrasqueira()}
+                    icon4={Icon.salaoDeFestas()}
+                    link='/projetos/ap08'
+                />
                 <Card
                     capaImg={imovel01}
                     bandeira='Lançamento'
@@ -73,7 +99,7 @@ function Projetos() {
                     bandeira='Lançamento'
                     title='Guedala Park - Premium'
                     subTitle='Jardim Guedala'
-                    description='2 dorms., opção de vaga e lazer surpreendente'
+                    description='2 dorms, opção de vaga e lazer surpreendente'
                     icon1={Icon.solario()}
                     icon2={Icon.salaoDeFestas()}
                     icon3={Icon.cineOpenAir()}
@@ -105,11 +131,11 @@ function Projetos() {
                     link='/projetos/ap06'
                 />
             </section>
-            <Mcmv/>
-            <Redes 
+            <Mcmv />
+            <Redes
                 sessao='SessaoClose'
             />
-            <Footer/>
+            <Footer />
         </motion.div>
     )
 }
